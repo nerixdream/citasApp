@@ -86,7 +86,13 @@ export const Formulario = ({
   };
 
   return (
-    <Modal visible={modalVisible} animationType="slide">
+    <Modal
+      visible={modalVisible}
+      animationType="slide"
+      onRequestClose={() => {
+        setModalVisible(false);
+        setPacienteObj({});
+      }}>
       <SafeAreaView style={styles.contenido}>
         <ScrollView>
           <Text style={styles.titulo}>

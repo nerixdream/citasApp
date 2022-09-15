@@ -92,7 +92,13 @@ const App = () => {
         />
       )}
 
-      <Modal visible={modalPaciente} animationType="fade">
+      <Modal
+        visible={modalPaciente}
+        animationType="fade"
+        onRequestClose={() => {
+          setModalPaciente(false);
+          setPaciente({});
+        }}>
         <InformacionPaciente
           paciente={paciente}
           setPaciente={setPaciente}
