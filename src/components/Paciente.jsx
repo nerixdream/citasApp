@@ -2,7 +2,7 @@ import React from 'react';
 import {Text, View, StyleSheet, Pressable} from 'react-native';
 
 // Helper
-import {formatearFecha} from './helpers';
+import {formatearFecha} from '../helpers';
 
 export const Paciente = ({
   item,

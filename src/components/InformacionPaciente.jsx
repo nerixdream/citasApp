@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 
 // Helper
-import {formatearFecha} from './helpers';
+import {formatearFecha} from '../helpers';
 
 export const InformacionPaciente = ({
   paciente,
